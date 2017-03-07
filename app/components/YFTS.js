@@ -25,8 +25,8 @@ var YFTS = React.createClass({
                   https://yourfavoriteteamsucks.com
                 </a>
               </p>
-              <p style={styles.eduTextStyle} className="list-group-item-text">● GitHub Repo -
-                <a style={styles.eduTextStyle} target="_blank" href="https://github.com/kmasila00/yourfavoriteteamsucks" >
+              <p style={styles.MQeduTextStyle} className="list-group-item-text">● GitHub Repo -
+                <a style={styles.MQeduTextStyle} target="_blank" href="https://github.com/kmasila00/yourfavoriteteamsucks" >
                   https://github.com/kmasila00/yourfavoriteteamsucks
                 </a>
               </p>

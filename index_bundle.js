@@ -14155,11 +14155,11 @@
 	            ),
 	            React.createElement(
 	              'p',
-	              { style: styles.eduTextStyle, className: 'list-group-item-text' },
+	              { style: styles.MQeduTextStyle, className: 'list-group-item-text' },
 	              '\u25CF GitHub Repo -',
 	              React.createElement(
 	                'a',
-	                { style: styles.eduTextStyle, target: '_blank', href: 'https://github.com/kmasila00/yourfavoriteteamsucks' },
+	                { style: styles.MQeduTextStyle, target: '_blank', href: 'https://github.com/kmasila00/yourfavoriteteamsucks' },
 	                'https://github.com/kmasila00/yourfavoriteteamsucks'
 	              )
 	            ),
