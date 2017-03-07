@@ -6,6 +6,7 @@ var Grok = require('../components/Grok');
 var YFTS = require('../components/YFTS');
 var GOT = require('../components/GOT');
 var Pweb = require('../components/Pweb');
+var MediaQuery = require('react-responsive');
 
 var ProjectsContainer = React.createClass({
 	getInitialState: function(){
@@ -37,11 +38,20 @@ var ProjectsContainer = React.createClass({
 		if(this.state.panel === 'Grok'){
 			return (
 				<div>
-					<div className="list-group">
-						<a style={styles.aboutMeBox} className="list-group-item">
-							<h2 style={styles.projectHeading} className="list-group-item-heading">Projects</h2>
-						</a>
-					</div>
+					<MediaQuery query='(max-device-width:450px)'>
+						<div className="list-group">
+							<a style={styles.MQaboutMeBox} className="list-group-item">
+								<h2 style={styles.MQprojectHeading} className="list-group-item-heading">Projects</h2>
+							</a>
+						</div>
+					</MediaQuery>
+					<MediaQuery query='(min-device-width:760px)'>
+						<div className="list-group">
+							<a style={styles.aboutMeBox} className="list-group-item">
+								<h2 style={styles.projectHeading} className="list-group-item-heading">Projects</h2>
+							</a>
+						</div>
+					</MediaQuery>
 					<div style={styles.projectButtonPanel}>
 						<div className="btn-group btn-group-justified" role="group" aria-label="...">
 							<div className="btn-group" role="group">

@@ -4,8 +4,6 @@ var Education = require('../components/Education');
 var Experience = require('../components/Experience');
 var Skills = require('../components/Skills');
 var BackButton = require('../components/BackButton');
-var ReactRouter = require('react-router');
-var Link = ReactRouter.Link;
 
 var EducationExperienceContainer = React.createClass({
   render(){
