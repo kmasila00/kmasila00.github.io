@@ -8,6 +8,7 @@ var GOT = React.createClass({
         <div style={styles.panelBox} className="list-group-item">
           <h4 style={styles.listHeading} className="list-group-item-heading">Welcome to the Game of Thrones</h4>
           <p style={styles.eduNameStyle} className="list-group-item-text">June 2016</p>
+            <p style={styles.eduTextStyle} className="list-group-item-text">● Sole Developer</p>
           <p style={styles.eduTextStyle} className="list-group-item-text">● Trivia app that tests your knowledge
             of Game of Thrones at varying difficulty levels</p>
           <p style={styles.eduTextStyle} className="list-group-item-text">● Used Postgres database to store and

@@ -14,6 +14,9 @@ var Grok = React.createClass({
           <p style={styles.eduTextStyle} className="list-group-item-text">● Chrome extension allows users to
             submit resources to the website as well as create plans while browsing the web. Uses Postgres database
             to store resource and information</p>
+          <p style={styles.eduTextStyle} className="list-group-item-text">● Set up the backend routing and databases
+            in the intial steps. Moved to working extensively on the front-end. Worked with D3.js to implement landing
+            page</p>
           <p style={styles.eduTextStyle} className="list-group-item-text">● Sequelize, Express, Angular, Node,
             HTML/CSS, D3, Chrome Extension</p>
           <p style={styles.eduTextStyle} className="list-group-item-text">● Website -

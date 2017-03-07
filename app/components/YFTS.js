@@ -8,6 +8,7 @@ var YFTS = React.createClass({
         <div style={styles.panelBox} className="list-group-item">
           <h4 style={styles.listHeading} className="list-group-item-heading">Your Favorite Team Sucks</h4>
           <p style={styles.eduNameStyle} className="list-group-item-text">August 2016 - September 2016</p>
+            <p style={styles.eduTextStyle} className="list-group-item-text">● Sole Developer</p>
           <p style={styles.eduTextStyle} className="list-group-item-text">● A Fantasy Football informational site
             (mobile compatible) that provides readers with up to date articles and rankings that will help them
             make the right decisions every week when it comes to their fantasy football team</p>

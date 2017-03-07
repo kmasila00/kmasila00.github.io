@@ -1,11 +1,14 @@
 var w = window.innerWidth;
+console.log(w);
+var styles;
 
-var styles = {
+styles = {
 	//header styles
 	headerBg: {
-		backgroundColor: '#3369D4',
-    fontFamily: "Lucida Console",
-    color:'#000000',
+		backgroundColor: '#D5D5D5',
+		borderColor: '#000000',
+		fontFamily: "Calibri",
+		color:'#000000',
 		textAlign: 'center',
 		marginLeft: w * 0.24,
 		marginRight: w * 0.24,
@@ -14,14 +17,15 @@ var styles = {
 	headerH1: {
 		marginTop: -28,
 		marginBottom: 0,
-		textAlign: "center"
+		textAlign: "center",
+		fontSize: 75
 	},
 	subHeader: {
-		fontSize: 23,
-    marginBottom: 3,
+		fontSize: 34,
+		marginBottom: 3,
 	},
 	phoneEmail: {
-		fontSize: 12,
+		fontSize: 16,
 		marginBottom: 3
 	},
 	linkedinSize:{
@@ -41,43 +45,44 @@ var styles = {
 	},
 	//list styles
 	textStyle: {
-		fontFamily: "Lucida Console",
-    color:'#000000',
-		textAlign: 'center'
+		fontFamily: "Calibri",
+		color:'#000000',
+		textAlign: 'center',
+		fontSize: 15
 	},
 	listHeading: {
-		fontFamily: "Lucida Console",
-    color:'#000000',
+		fontFamily: "Calibri",
+		color:'#000000',
 		textAlign: 'center',
-		fontSize: 30,
+		fontSize: 36,
 		paddingBottom: 10
 	},
 	projectHeading: {
-		fontFamily: "Lucida Console",
-    color:'#000000',
+		fontFamily: "Calibri",
+		color:'#000000',
 		textAlign: 'center'
 	},
 	aboutMeBox: {
-		backgroundColor: '#3369D4',
-		borderColor: '#3369D4',
+		backgroundColor: '#D5D5D5',
+		borderColor: '#D5D5D5',
 		marginLeft: w * 0.28,
 		marginRight: w * 0.28,
 		marginBottom: 30
 	},
 	buttonStyle: {
 		eduexp : {
-			backgroundColor: '#3369D4',
+			backgroundColor: '#D5D5D5',
 			borderColor: '#333333',
-			fontFamily: "Lucida Console",
-	    color:'#000000',
+			fontFamily: "Calibri",
+			color:'#000000',
 			textAlign: 'center',
 			fontSize: 20
 		},
 		projects: {
-			backgroundColor: '#3369D4',
+			backgroundColor: '#D5D5D5',
 			borderColor: '#333333',
-			fontFamily: "Lucida Console",
-	    color:'#000000',
+			fontFamily: "Calibri",
+			color:'#000000',
 			textAlign: 'center',
 			fontSize: 20
 		}
@@ -94,17 +99,19 @@ var styles = {
 	},
 	eduNameStyle: {
 		paddingLeft: 10,
-		fontFamily: "Lucida Console",
-    color:'#000000',
-		textDecoration: 'underline'
+		fontFamily: "Calibri",
+		color:'#000000',
+		textDecoration: 'underline',
+		fontSize: 18
 	},
 	eduTextStyle: {
 		paddingLeft: 10,
-		fontFamily: "Lucida Console",
-    color:'#000000'
+		fontFamily: "Calibri",
+		color:'#000000',
+		fontSize: 15
 	},
 	tabsBgColor: {
-		backgroundColor: '#3369D4'
+		backgroundColor: '#D5D5D5'
 	},
 	//Project buttons
 	projectButtonPanel: {
@@ -118,8 +125,8 @@ var styles = {
 		marginRight: 25
 	},
 	panelBox: {
-		backgroundColor: '#3369D4',
-		borderColor: '#3369D4',
+		backgroundColor: '#D5D5D5',
+		borderColor: '#D5D5D5',
 		marginBottom: 30
 	},
 	imgSize: {
