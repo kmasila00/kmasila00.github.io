@@ -1,5 +1,5 @@
 var React = require('react');
-var styles = require('../styles');
+
 
 var ProjectButtons = React.createClass({
   render() {

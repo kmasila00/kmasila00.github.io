@@ -1,5 +1,4 @@
 var React = require('react');
-var styles = require('../styles');
 var BackButton = require('../components/BackButton');
 var ProjectButtons = require('../components/ProjectButtons');
 var Grok = require('../components/Grok');
@@ -7,6 +6,8 @@ var YFTS = require('../components/YFTS');
 var GOT = require('../components/GOT');
 var Pweb = require('../components/Pweb');
 var MediaQuery = require('react-responsive');
+var projectStyles = require('../stylesheets/Projects');
+var buttonStyles = require('../stylesheets/Buttons');
 
 var ProjectsContainer = React.createClass({
 	getInitialState: function(){
@@ -40,37 +41,44 @@ var ProjectsContainer = React.createClass({
 				<div>
 					<MediaQuery query='(max-device-width:450px)'>
 						<div className="list-group">
-							<a style={styles.MQaboutMeBox} className="list-group-item">
-								<h2 style={styles.MQprojectHeading} className="list-group-item-heading">Projects</h2>
+							<a style={projectStyles.MQ.aboutMeBox} className="list-group-item">
+								<h2 style={projectStyles.MQ.projectHeading} className="list-group-item-heading">Projects</h2>
 							</a>
 						</div>
 					</MediaQuery>
 					<MediaQuery query='(min-device-width:760px)'>
 						<div className="list-group">
-							<a style={styles.aboutMeBox} className="list-group-item">
-								<h2 style={styles.projectHeading} className="list-group-item-heading">Projects</h2>
+							<a style={projectStyles.REG.aboutMeBox} className="list-group-item">
+								<h2 style={projectStyles.REG.projectHeading} className="list-group-item-heading">Projects</h2>
 							</a>
 						</div>
 					</MediaQuery>
-					<div style={styles.projectButtonPanel}>
+					<div style={projectStyles.REG.projectButtonPanel}>
 						<div className="btn-group btn-group-justified" role="group" aria-label="...">
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
 							</div>
 						</div>
 					</div>
 					<Grok />
-					<div style={styles.EEpageStyle}>
-						<BackButton />
+					<div style={projectStyles.REG.EEpageStyle}>
+						<MediaQuery query='(max-device-width:450px)'>
+							<BackButton
+								format={buttonStyles.MQ} />
+						</MediaQuery>
+						<MediaQuery query='(min-device-width:760px)'>
+							<BackButton
+								format={buttonStyles.REG} />
+						</MediaQuery>
 					</div>
 				</div>
 			)
@@ -78,29 +86,36 @@ var ProjectsContainer = React.createClass({
 			return (
 				<div>
 					<div className="list-group">
-						<a style={styles.aboutMeBox} className="list-group-item">
-							<h2 style={styles.projectHeading} className="list-group-item-heading">Projects</h2>
+						<a style={projectStyles.REG.aboutMeBox} className="list-group-item">
+							<h2 style={projectStyles.REG.projectHeading} className="list-group-item-heading">Projects</h2>
 						</a>
 					</div>
-					<div style={styles.projectButtonPanel}>
+					<div style={projectStyles.REG.projectButtonPanel}>
 						<div className="btn-group btn-group-justified" role="group" aria-label="...">
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.eduexp} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
 							</div>
 						</div>
 					</div>
 					<YFTS />
-					<div style={styles.EEpageStyle}>
-						<BackButton />
+					<div style={projectStyles.REG.EEpageStyle}>
+						<MediaQuery query='(max-device-width:450px)'>
+							<BackButton
+								format={buttonStyles.MQ} />
+						</MediaQuery>
+						<MediaQuery query='(min-device-width:760px)'>
+							<BackButton
+								format={buttonStyles.REG} />
+						</MediaQuery>
 					</div>
 				</div>
 			)
@@ -108,29 +123,36 @@ var ProjectsContainer = React.createClass({
 			return (
 				<div>
 					<div className="list-group">
-						<a style={styles.aboutMeBox} className="list-group-item">
-							<h2 style={styles.projectHeading} className="list-group-item-heading">Projects</h2>
+						<a style={projectStyles.REG.aboutMeBox} className="list-group-item">
+							<h2 style={projectStyles.REG.projectHeading} className="list-group-item-heading">Projects</h2>
 						</a>
 					</div>
-					<div style={styles.projectButtonPanel}>
+					<div style={projectStyles.REG.projectButtonPanel}>
 						<div className="btn-group btn-group-justified" role="group" aria-label="...">
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.eduexp} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
 							</div>
 						</div>
 					</div>
 					<GOT />
-					<div style={styles.EEpageStyle}>
-						<BackButton />
+					<div style={projectStyles.REG.EEpageStyle}>
+						<MediaQuery query='(max-device-width:450px)'>
+							<BackButton
+								format={buttonStyles.MQ} />
+						</MediaQuery>
+						<MediaQuery query='(min-device-width:760px)'>
+							<BackButton
+								format={buttonStyles.REG} />
+						</MediaQuery>
 					</div>
 				</div>
 			)
@@ -138,29 +160,36 @@ var ProjectsContainer = React.createClass({
 			return (
 				<div>
 					<div className="list-group">
-						<a style={styles.aboutMeBox} className="list-group-item">
-							<h2 style={styles.projectHeading} className="list-group-item-heading">Projects</h2>
+						<a style={projectStyles.REG.aboutMeBox} className="list-group-item">
+							<h2 style={projectStyles.REG.projectHeading} className="list-group-item-heading">Projects</h2>
 						</a>
 					</div>
-					<div style={styles.projectButtonPanel}>
+					<div style={projectStyles.REG.projectButtonPanel}>
 						<div className="btn-group btn-group-justified" role="group" aria-label="...">
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.eduexp} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.grokPanel} type="button" className="btn btn-default">Grok</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.yftsPanel} type="button" className="btn btn-default">Your Favorite Team Sucks</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.gotPanel} type="button" className="btn btn-default">GoT Trivia</button>
 							</div>
 							<div className="btn-group" role="group">
-								<button style={styles.buttonStyle.projects} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
+								<button style={projectStyles.REG.buttonStyle} onClick={this.pwebPanel} type="button" className="btn btn-default">Personal Website</button>
 							</div>
 						</div>
 					</div>
 					<Pweb />
-					<div style={styles.EEpageStyle}>
-						<BackButton />
+					<div style={projectStyles.REG.EEpageStyle}>
+						<MediaQuery query='(max-device-width:450px)'>
+							<BackButton
+								format={buttonStyles.MQ} />
+						</MediaQuery>
+						<MediaQuery query='(min-device-width:760px)'>
+							<BackButton
+								format={buttonStyles.REG} />
+						</MediaQuery>
 					</div>
 				</div>
 			)

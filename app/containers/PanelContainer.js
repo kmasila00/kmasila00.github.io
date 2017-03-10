@@ -1,5 +1,5 @@
 var React = require('react');
-var styles = require('../styles');
+
 var Grok = require('../components/Grok');
 var YFTS = require('../components/YFTS');
 var GOT = require('../components/GOT');
