@@ -4,33 +4,32 @@ var w = window.innerWidth;
 var styles;
 
 var standard = {
+  topAdjust:{
+    marginTop: 20
+  },
   projectHeading: {
-		fontFamily: "Calibri",
-		color:'#000000',
-		textAlign: 'center'
-	},
-	projectButtonPanel: {
-		marginLeft: 30,
-		marginRight: 30,
-		marginBottom: 20
+		textAlign: 'center',
+    fontSize: 80,
+    marginTop: 30,
+    marginBottom: 30
 	},
 	panelSize: {
 		marginLeft: 25,
 		marginRight: 25
 	},
 	panelBox: {
-		backgroundColor: '#D5D5D5',
-		borderColor: '#D5D5D5',
+		backgroundColor: '#00BFB3',
+		borderColor: '#00BFB3',
 		marginBottom: 30
 	},
 	imgSize: {
 		marginTop: 20,
 		marginBottom: 20,
-		width: w - 100
+		width: w/2 - 100
 	},
   aboutMeBox: {
-    backgroundColor: '#D5D5D5',
-    borderColor: '#D5D5D5',
+    backgroundColor: '#00BFB3',
+    borderColor: '#00BFB3',
     marginLeft: w * 0.28,
     marginRight: w * 0.28,
     marginBottom: 30
@@ -41,68 +40,56 @@ var standard = {
   },
   eduNameStyle: {
 		paddingLeft: 10,
-		fontFamily: "Calibri",
 		color:'#000000',
 		textDecoration: 'underline',
 		fontSize: 18
 	},
 	eduTextStyle: {
 		paddingLeft: 10,
-		fontFamily: "Calibri",
 		color:'#000000',
 		fontSize: 15
 	},
   listHeading: {
-    fontFamily: "Calibri",
     color:'#000000',
-    textAlign: 'center',
     fontSize: 36,
     paddingBottom: 10
-  },
-  buttonStyle: {
-    backgroundColor: '#D5D5D5',
-    borderColor: '#333333',
-    fontFamily: "Calibri",
-    color:'#000000',
-    textAlign: 'center',
-    fontSize: 20
   }
 };
 
 var mobile = {
   projectHeading: {
-		fontFamily: "Calibri",
-		color:'#000000',
 		textAlign: 'center',
-		fontSize: 60
+		fontSize: 80,
+    paddingTop: 25
 	},
   aboutMeBox: {
-    backgroundColor: '#D5D5D5',
-    borderColor: '#D5D5D5',
+    backgroundColor: '#00BFB3',
+    borderColor: '#00BFB3',
     marginLeft: 190,
     marginRight: 190,
     marginBottom: 30
   },
   eduNameStyle:{
 		paddingLeft: 10,
-		fontFamily: "Calibri",
 		color:'#000000',
 		textDecoration: 'underline',
 		fontSize: 30
 	},
 	eduTextStyle: {
 		paddingLeft: 10,
-		fontFamily: "Calibri",
 		color:'#000000',
 		fontSize: 26
 	},
 	listHeading:{
-		fontFamily: "Calibri",
 		color:'#000000',
-		textAlign: 'center',
 		fontSize: 60,
 		paddingBottom: 10
-	}
+	},
+  imgSize: {
+		marginTop: 20,
+		marginBottom: 20,
+		width: w - 100
+	},
 };
 
 styles = {

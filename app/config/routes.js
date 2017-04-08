@@ -6,15 +6,17 @@ var hashHistory = ReactRouter.hashHistory
 var IndexRoute = ReactRouter.IndexRoute;
 var Main = require('../components/Main');
 var HomeContainer = require('../containers/HomeContainer');
-var EducationExperienceContainer = require('../containers/EducationExperienceContainer');
+var ProfileContainer = require('../containers/ProfileContainer');
+var TimelineContainer = require('../containers/TimelineContainer');
 var ProjectsContainer = require('../containers/ProjectsContainer');
 
 var routes = (
 	<Router history={hashHistory}>
 		<Route path='/' component={Main}>
 			<IndexRoute component={HomeContainer} />
-			<Route path='EducationExperience' component={EducationExperienceContainer}/>
-			<Route path='Projects' component={ProjectsContainer}/>
+			<Route path='timeline' component={TimelineContainer}/>
+			<Route path='projects' component={ProjectsContainer}/>
+			<Route path='profile' component={ProfileContainer}/>
 		</Route>
 	</Router>
 );

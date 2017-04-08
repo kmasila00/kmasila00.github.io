@@ -1,0 +1,73 @@
+body {
+  background-color: #037971;
+}
+
+.appear-enter {
+  transition-duration: .7s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+  opacity: 0;
+}
+
+.appear-enter.appear-enter-active {
+  opacity: 1;
+}
+
+.appear-leave {
+  opacity: 0;
+}
+
+.pwebBorder {
+  border: 1px solid black;
+}
+
+.contain {
+  position:relative;
+}
+.hovering {
+  position: relative;
+}
+.profileText {
+  position: absolute;
+  visibility: hidden;
+  font-size: 36px;
+}
+
+.eduText {
+  position: absolute;
+  z-index: 10px;
+  visibility: hidden;
+  font-size: 36px;
+}
+
+.projectText {
+  position: absolute;
+  z-index: 20px;
+  visibility: hidden;
+  font-size: 36px;
+}
+
+.sibling{
+  text-align: center;
+  margin-left: -200px;
+}
+
+.profileImg:hover ~ .sibling .profileText{
+    visibility: visible;
+}
+.eduImg:hover ~ .sibling .eduText{
+    visibility: visible;
+}
+.projectImg:hover + .sibling .projectText{
+    visibility: visible;
+}
+
+.scr {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 1800px) {
+    .scr {
+      margin-left: 200px;
+    }
+}
