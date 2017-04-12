@@ -1,137 +1,111 @@
 'use strict'
 
-var w = window.innerWidth;
-var h = window.innerHeight;
 var styles;
 
 var standard = {
-	headerBg: {
+	outer: {
 		backgroundColor: '#037971',
 		borderColor: '#000000',
 		fontFamily: "Calibri",
 		color:'#000000',
-		textAlign: 'center',
-		height: h/2,
-		display: 'table',
-		width: '100%',
-		marginBottom: 0
-	},
-	vertAlign:{
-		display:'table-cell',
-		verticalAlign:'middle'
-	},
-	bottomBg:{
-		backgroundColor: '#00BFB3',
-		height: h/2,
-		display: 'table',
-		width: '100%',
 		marginBottom: 0,
-		textAlign: 'center',
 		display: 'table',
+		position: 'absolute',
+		height: '100%',
 		width: '100%'
 	},
+	middle:{
+		display: 'table-cell',
+		verticalAlign: 'middle'
+	},
+	inner: {
+		textAlign: 'center'
+	},
 	mainPic: {
-		marginTop: -20,
 		borderRadius: '50%',
-		width:'11.5%'
+		width:'15.5%'
 	},
 	headerH1: {
-		marginTop: -8,
-		marginBottom: -15,
+		marginTop: -5,
+		marginBottom: -5,
 		textAlign: "center",
-		fontSize: 100
+		fontSize: 100,
+		color: 'white'
 	},
 	subHeader: {
-		fontSize: 24,
-		marginBottom: -10
+		fontSize: 36,
+		marginBottom: -5,
+		color: 'white'
 	},
-	phoneEmail: {
-		fontSize: 16,
-		marginBottom: 3
-	},
-	linkedinSize:{
-		height: 35,
-		width: 35,
-		marginTop: 10
-	},
-	gitSize: {
-		paddingTop: 10,
-		height: 55,
-		width: 70
-	},
-	documentSize: {
+	linkSize:{
 		height: 40,
 		width: 40,
-		marginTop: 10
+		marginTop: 10,
+		marginRight: 10,
+		cursor: 'pointer'
 	},
-	routerImg:{
-		width: '15%',
-		cursor: 'pointer',
-		marginRight: 10
+	imageAlign: {
+		marginBottom: 10
 	},
-	imageAlign:{
-		marginBottom: -20
+	naviContent: {
+		display: 'inline',
+		paddingLeft: 5,
+		fontSize: 20,
+		color: 'white',
+		cursor: 'pointer'
 	}
 };
 
 var mobile = {
 	//header styles
-	headerBg: {
+	outer: {
 		backgroundColor: '#037971',
 		borderColor: '#000000',
 		fontFamily: "Calibri",
 		color:'#000000',
-		textAlign: 'center',
-		height: h/2,
+		marginBottom: 0,
 		display: 'table',
-		width: '100%',
-		marginBottom: 0
+		position: 'absolute',
+		height: '100%',
+		width: '100%'
+	},
+	middle:{
+		display: 'table-cell',
+		verticalAlign: 'middle'
+	},
+	inner: {
+		textAlign: 'center'
 	},
 	mainPic: {
 		borderRadius: '50%',
-		width:'30%',
-		marginTop: -20
-	},
-	vertAlign:{
-		display:'table-cell',
-		verticalAlign:'middle'
-	},
-	bottomBg:{
-		backgroundColor: '#00BFB3',
-		height: h/2,
-		display: 'table',
-		width: '100%',
-		marginBottom: 0,
-		textAlign: 'center'
+		width:'45.5%'
 	},
 	headerH1: {
-		marginTop: -10,
-		marginBottom: 0,
+		marginTop: -5,
+		marginBottom: -5,
 		textAlign: "center",
-		fontSize: 120
+		fontSize: 125,
+		color: 'white'
 	},
 	subHeader: {
-		fontSize: 70,
-		marginBottom: 3,
-	},
-	phoneEmail: {
 		fontSize: 65,
-		marginBottom: 3
+		color: 'white'
 	},
-	linkedinSize:{
-		height: 100,
-		width: 100,
-		marginTop: 20
+	linkSize:{
+		width: 95,
+		marginTop: 10,
+		marginRight: 20,
+		cursor: 'pointer'
 	},
-	gitSize: {
-		paddingTop: 10,
-		height: 131.25,
-		width: 175
+	imageAlign: {
+		marginBottom: 15
 	},
-	documentSize: {
-		height: 100,
-		width: 100,
-		marginTop: 20
+	naviContent: {
+		display: 'inline',
+		paddingLeft: 8,
+		fontSize: 45,
+		color: 'white',
+		cursor: 'pointer'
 	}
 };
 

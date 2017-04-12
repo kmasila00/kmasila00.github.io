@@ -2,7 +2,7 @@
 
 var standard = {
   leftBg: {
-    backgroundColor: '#00BFB3',
+    backgroundColor: '#037971',
     borderColor: '#000000',
     height: 2156,
     position: 'relative',
@@ -10,7 +10,7 @@ var standard = {
     textAlign: 'center'
   },
   rightBg: {
-    backgroundColor: '#037971',
+    backgroundColor: '#D4F4DD',
     borderLeftWidth: 5,
     borderLeftColor: 'black',
     height: '100%',
@@ -20,7 +20,6 @@ var standard = {
   overlay: {
     position: 'absolute',
     zIndex: 20,
-    width: '100%',
     left: '49.25%'
   },
   overlay2: {
@@ -30,7 +29,9 @@ var standard = {
     textAlign: 'center'
   },
   title: {
-    fontSize: 80
+    fontSize: 80,
+    color: 'white',
+    textShadow: '4px 4px #000000'
   },
   markers: {
     marker1:{
@@ -66,7 +67,7 @@ var standard = {
   },
   //MOBILE RESPONSE
   MQbg:{
-    backgroundColor: '#00BFB3',
+    backgroundColor: '#D4F4DD',
     borderLeftWidth: 5,
     borderLeftColor: 'black',
     height: 4000,
@@ -75,7 +76,9 @@ var standard = {
     textAlign: 'center'
   },
   MQtitle:{
-    fontSize: 100
+    fontSize: 100,
+    color: 'white',
+    textShadow: '6px 6px #000000'
   },
   MQoverlay: {
     position: 'absolute',

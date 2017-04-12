@@ -21,28 +21,26 @@ var ProfileStyles = {
 	},
 	firstPic: {
 		borderRadius: '50%',
-		width:'15%',
+		width:'17%',
     float: 'left',
     zIndex: 5,
-    paddingRight: 10
+    marginRight: 22,
+    paddingBottom: 1
 	},
   thirdPic: {
 		borderRadius: '50%',
-		width:'15%',
+		width:'17%',
     float: 'right',
-    zIndex: 5
+    zIndex: 5,
+    marginLeft: 30
 	},
-  firstP : {
-    float: "left",
-    textAlign: 'left'
-  },
-  thirdP : {
-    float: "right",
-    textAlign: 'right'
+  para:{
+    color: 'white'
   },
   title: {
     fontSize: 80,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: 'white'
   }
 };
 
@@ -65,24 +63,27 @@ var MQProfileStyles = {
 	},
 	firstPic: {
 		borderRadius: '50%',
-		width:'30%',
+		width:'35%',
     float: 'left',
     zIndex: 5,
-    paddingRight: 10
+    marginRight: 30
 	},
   thirdPic: {
 		borderRadius: '50%',
-		width:'30%',
+		width:'35%',
     float: 'right',
-    zIndex: 5
+    zIndex: 5,
+    marginLeft: 40
 	},
   title: {
     fontSize: 100,
     textAlign: 'center',
-    marginBottom: 40
+    marginBottom: 40,
+    color: 'white'
   },
   para: {
-    fontSize: 40
+    fontSize: 40,
+    color: 'white'
   }
 };
 

@@ -11,15 +11,16 @@ var standard = {
 		textAlign: 'center',
     fontSize: 80,
     marginTop: 30,
-    marginBottom: 30
+    marginBottom: 30,
+    color: 'white'
 	},
 	panelSize: {
-		marginLeft: 25,
-		marginRight: 25
+		marginLeft: 40,
+		marginRight: 40
 	},
 	panelBox: {
-		backgroundColor: '#00BFB3',
-		borderColor: '#00BFB3',
+		backgroundColor: '#D4F4DD',
+		borderColor: '#D4F4DD',
 		marginBottom: 30
 	},
 	imgSize: {
@@ -60,7 +61,8 @@ var mobile = {
   projectHeading: {
 		textAlign: 'center',
 		fontSize: 80,
-    paddingTop: 25
+    paddingTop: 25,
+    color: 'white'
 	},
   aboutMeBox: {
     backgroundColor: '#00BFB3',

@@ -11,7 +11,7 @@ var BackButtonStyle = {
       zIndex: 5
     },
     buttonColor: {
-      color: '#333'
+      color: 'white'
     }
   },
   backProfile: {
@@ -22,7 +22,7 @@ var BackButtonStyle = {
       paddingTop: 20
     },
     buttonColor: {
-      color: '#333'
+      color: 'white'
     }
   },
   backProject: {
@@ -33,7 +33,7 @@ var BackButtonStyle = {
       paddingTop: 0
     },
     buttonColor: {
-      color: '#333'
+      color: 'white'
     }
   }
 
