@@ -14,7 +14,7 @@ var info = {
               "JavaScript, React Native, Redux, Node, HTML/CSS, Dockers, Hydra"]
   },
   BJs: {
-    id: 3,
+    id: 4,
     image: 'rx.png',
     company: "Bj's Pharmacy, Inc.",
     title: 'Pharmacy Technician',
@@ -23,7 +23,7 @@ var info = {
             "Swiftly calculated dosages, dispensed medication and prepared prescription labels"]
   },
   seniorcare: {
-    id: 4,
+    id: 5,
     image: 'seniorcare.png',
     company: 'Senior Care EMS',
     title: 'Emergency Medical Technician',
@@ -32,25 +32,35 @@ var info = {
               "Assist patients in transport to and from doctor appointments as well as the emergency room"]
   },
   fullstack: {
-    id: 2,
+    id: 3,
     image: 'fullstackacademy.png',
     company: 'Fullstack Academy of Code',
     time: 'April 2016 - July 2016',
     details: ['13-week immersive course software engineering course, specializing in JavaScript']
   },
   EMT: {
-    id: 5,
+    id: 6,
     image: 'stjohns.png',
     company: "St. John's University & NY State Bureau Of Emergency Medical Service",
     time: 'Sept. 2013 - Dec. 2013',
     details: ['EMT–Basic Certification']
   },
   CCNY: {
-    id: 6,
+    id: 7,
     image: 'ccnylogo.jpg',
     company: 'City College of New York, City University of New York',
     time: 'Aug. 2008 - May 2013',
     details: ['Bachelor of Science in Biology']
+  },
+  MJD: {
+    id: 2,
+    image: 'mjd.jpg',
+    company: 'MJD Interactive',
+    title: 'Front-End Engineer (Contract)',
+    time: 'May 2017 - July 2017',
+    details: ["Participated on a team of 8 engineers in 2-week sprints to complete a project with an upcoming deadline from contracted company",
+              "Lead engineer on the restructuring of the web application to be mobile responsive with extensive use of React and Radium",
+              "Javascript, React, Radium, Node, HTML/CSS"]
   }
 
 };

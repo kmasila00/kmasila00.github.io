@@ -24,6 +24,13 @@ var TimelineContainer = React.createClass({
                 time={Info.mobileStartup.time}
                 details={Info.mobileStartup.details} />
               <TimelineBox
+                id={Info.MJD.id}
+                imgName={Info.MJD.image}
+                company={Info.MJD.company}
+                title={Info.MJD.title}
+                time={Info.MJD.time}
+                details={Info.MJD.details} />
+              <TimelineBox
                 id={Info.BJs.id}
                 imgName={Info.BJs.image}
                 company={Info.BJs.company}
@@ -93,6 +100,14 @@ var TimelineContainer = React.createClass({
               <Markers
                 markerStyle={eduStyles.MQmarkers} />
             </div>
+              <TimelineBox
+                mobile="true"
+                id={Info.MJD.id}
+                imgName={Info.MJD.image}
+                company={Info.MJD.company}
+                title={Info.MJD.title}
+                time={Info.MJD.time}
+                details={Info.MJD.details} />
               <TimelineBox
                 mobile="true"
                 id={Info.fullstack.id}

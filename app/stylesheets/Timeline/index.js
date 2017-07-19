@@ -4,18 +4,18 @@ var standard = {
   leftBg: {
     backgroundColor: '#037971',
     borderColor: '#000000',
-    height: 2156,
+    height: 2600,
     position: 'relative',
-    marginBottom: -30,
-    textAlign: 'center'
+    textAlign: 'center',
+    marginBottom: 0
   },
   rightBg: {
     backgroundColor: '#D4F4DD',
     borderLeftWidth: 5,
     borderLeftColor: 'black',
-    height: '100%',
+    height: 2600,
     position: 'relative',
-    marginBottom: -30
+    marginBottom: 0
   },
   overlay: {
     position: 'absolute',
@@ -35,33 +35,38 @@ var standard = {
   },
   markers: {
     marker1:{
-      marginLeft: 30,
+      marginLeft: 26.5,
       top: 80,
       fontSize: 40
     },
     marker2:{
-      marginLeft: 30,
+      marginLeft: 26.5,
       top: 380,
       fontSize: 40
     },
     marker3:{
-      marginLeft: 30,
+      marginLeft: 26.5,
       top: 680,
       fontSize: 40
     },
     marker4:{
-      marginLeft: 30,
+      marginLeft: 26.5,
       top: 980,
       fontSize: 40
     },
     marker5:{
-      marginLeft: 30,
+      marginLeft: 26.5,
       top: 1280,
       fontSize: 40
     },
     marker6:{
-      marginLeft: 30,
+      marginLeft: 26.5,
       top: 1580,
+      fontSize: 40
+    },
+    marker7:{
+      marginLeft: 26.5,
+      top: 1900,
       fontSize: 40
     }
   },
@@ -70,10 +75,10 @@ var standard = {
     backgroundColor: '#D4F4DD',
     borderLeftWidth: 5,
     borderLeftColor: 'black',
-    height: 4000,
+    height: 4683,
     position: 'relative',
-    marginBottom: -30,
-    textAlign: 'center'
+    textAlign: 'center',
+    marginBottom: 0
   },
   MQtitle:{
     fontSize: 100,
@@ -104,22 +109,27 @@ var standard = {
     },
     marker3:{
       marginLeft: 30,
-      top: 1215,
+      top: 1515,
       fontSize: 90
     },
     marker4:{
       marginLeft: 30,
-      top: 1900,
+      top: 1960,
       fontSize: 90
     },
     marker5:{
       marginLeft: 30,
-      top: 2350,
+      top: 2600,
       fontSize: 90
     },
     marker6:{
       marginLeft: 30,
-      top: 2800,
+      top: 3000,
+      fontSize: 90
+    },
+    marker7:{
+      marginLeft: 30,
+      top: 3400,
       fontSize: 90
     }
   }

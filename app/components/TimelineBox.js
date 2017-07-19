@@ -24,10 +24,11 @@ var timelineBox = React.createClass({
       var id = this.props.id;
       if(id === 1) containerStyle.marginTop = 100;
       else if(id === 2) containerStyle.marginTop = 1055;
-      else if(id === 3) containerStyle.marginTop = 1500;
-      else if(id === 4) containerStyle.marginTop = 2280;
-      else if(id === 5) containerStyle.marginTop = 2815;
-      else containerStyle.marginTop = 3375;
+      else if(id === 3) containerStyle.marginTop = 1835;
+      else if(id === 4) containerStyle.marginTop = 2350;
+      else if(id === 5) containerStyle.marginTop = 3085;
+      else if(id === 6) containerStyle.marginTop = 3585;
+      else containerStyle.marginTop = 4085;
 
       return (
         <div style={containerStyle}>
@@ -61,7 +62,8 @@ var timelineBox = React.createClass({
       else if(id === 3) containerStyle.marginTop = 840;
       else if(id === 4) containerStyle.marginTop = 1185;
       else if(id === 5) containerStyle.marginTop = 1510;
-      else containerStyle.marginTop = 1860;
+      else if(id === 6) containerStyle.marginTop = 1860;
+      else containerStyle.marginTop = 2235;
 
       return (
         <div className="scr" style={containerStyle}>

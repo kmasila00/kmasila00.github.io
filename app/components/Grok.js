@@ -23,8 +23,8 @@ var Grok = React.createClass({
               <p style={styles.MQ.eduTextStyle} className="list-group-item-text">● Sequelize, Express, Angular, Node,
                 HTML/CSS, D3, Chrome Extension</p>
               <p style={styles.MQ.eduTextStyle} className="list-group-item-text">● Website -
-                <a style={styles.MQ.eduTextStyle} target="_blank" href="http://grokitall.com" >
-                  https://grokitall.com
+                <a style={styles.MQ.eduTextStyle} target="_blank" href="http://grok.kmasilamani.com" >
+                  https://grok.kmasilamani.com
                 </a>
               </p>
               <p style={styles.MQ.eduTextStyle} className="list-group-item-text">● GitHub Repo -
@@ -57,8 +57,8 @@ var Grok = React.createClass({
                 <p style={styles.REG.eduTextStyle} className="list-group-item-text">● Sequelize, Express, Angular, Node,
                   HTML/CSS, D3, Chrome Extension</p>
                 <p style={styles.REG.eduTextStyle} className="list-group-item-text">● Website -
-                  <a style={styles.REG.eduTextStyle} target="_blank" href="http://grokitall.com" >
-                    https://grokitall.com
+                  <a style={styles.REG.eduTextStyle} target="_blank" href="http://grok.kmasilamani.com" >
+                    https://grok.kmasilamani.com
                   </a>
                 </p>
                 <p style={styles.REG.eduTextStyle} className="list-group-item-text">● GitHub Repo -

@@ -10,6 +10,7 @@ var Markers = React.createClass({
         <div><span style={this.props.markerStyle.marker4} className="glyphicon glyphicon-record"></span></div>
         <div><span style={this.props.markerStyle.marker5} className="glyphicon glyphicon-record"></span></div>
         <div><span style={this.props.markerStyle.marker6} className="glyphicon glyphicon-record"></span></div>
+        <div><span style={this.props.markerStyle.marker7} className="glyphicon glyphicon-record"></span></div>
       </div>
     )
   }
